@@ -1,0 +1,48 @@
+{
+  "name": "Contact",
+  "type": "object",
+  "properties": {
+    "list_id": {
+      "type": "string",
+      "description": "Parent contact list ID"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email"
+    },
+    "name": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "bounced",
+        "unsubscribed"
+      ],
+      "default": "active"
+    },
+    "lead_score": {
+      "type": "number",
+      "default": 0,
+      "description": "Engagement score: +5 open, +10 click, +20 reply"
+    },
+    "metadata": {
+      "type": "string",
+      "description": "JSON metadata"
+    }
+  },
+  "required": [
+    "email",
+    "list_id"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ActivityLog",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "description": "Action type (email_sent, email_opened, email_clicked, etc.)"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "campaign_name": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "string",
+      "description": "JSON metadata"
+    }
+  },
+  "required": [
+    "action"
+  ]
+}

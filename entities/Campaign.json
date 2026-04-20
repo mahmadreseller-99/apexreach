@@ -1,0 +1,101 @@
+{
+  "name": "Campaign",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Campaign name"
+    },
+    "list_id": {
+      "type": "string",
+      "description": "Contact list ID"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Primary subject line"
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A/B test subject lines"
+    },
+    "body": {
+      "type": "string",
+      "description": "Email body HTML"
+    },
+    "attachment_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Uploaded file URLs to attach to every email"
+    },
+    "smtp_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Selected SMTP account IDs"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "sending",
+        "completed",
+        "paused",
+        "scheduled"
+      ],
+      "default": "draft"
+    },
+    "delay_seconds": {
+      "type": "number",
+      "default": 5
+    },
+    "processed_count": {
+      "type": "number",
+      "default": 0
+    },
+    "opened_count": {
+      "type": "number",
+      "default": 0
+    },
+    "clicked_count": {
+      "type": "number",
+      "default": 0
+    },
+    "replied_count": {
+      "type": "number",
+      "default": 0
+    },
+    "failed_count": {
+      "type": "number",
+      "default": 0
+    },
+    "total_contacts": {
+      "type": "number",
+      "default": 0
+    },
+    "track_opens": {
+      "type": "boolean",
+      "default": true
+    },
+    "track_clicks": {
+      "type": "boolean",
+      "default": true
+    },
+    "scheduled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

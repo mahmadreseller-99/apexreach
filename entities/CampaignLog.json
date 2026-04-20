@@ -1,0 +1,62 @@
+{
+  "name": "CampaignLog",
+  "type": "object",
+  "properties": {
+    "campaign_id": {
+      "type": "string"
+    },
+    "contact_id": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "smtp_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "sent",
+        "delivered",
+        "opened",
+        "clicked",
+        "replied",
+        "failed",
+        "bounced"
+      ],
+      "default": "sent"
+    },
+    "error": {
+      "type": "string"
+    },
+    "subject_used": {
+      "type": "string"
+    },
+    "opened_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "clicked_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "replied_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "device_type": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "campaign_id",
+    "contact_email"
+  ]
+}

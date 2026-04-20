@@ -1,0 +1,29 @@
+{
+  "name": "Template",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "outreach",
+        "follow_up",
+        "newsletter",
+        "promotional",
+        "other"
+      ],
+      "default": "outreach"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "DripSequence",
+  "type": "object",
+  "properties": {
+    "campaign_id": {
+      "type": "string"
+    },
+    "step_number": {
+      "type": "number"
+    },
+    "delay_hours": {
+      "type": "number",
+      "default": 24
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "campaign_id",
+    "step_number"
+  ]
+}

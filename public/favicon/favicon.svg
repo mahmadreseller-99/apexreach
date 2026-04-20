@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange Rounded Background -->
+  <rect x="32" y="32" width="448" height="448" rx="100" ry="100" fill="#FF6A13"/>
+
+  <!-- Lightning Bolt with White Outline -->
+  <path 
+    d="M280 120 
+       L180 260 
+       H260 
+       L230 390 
+       L360 230 
+       H270 
+       Z"
+    fill="none"
+    stroke="white"
+    stroke-width="28"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+</svg>
